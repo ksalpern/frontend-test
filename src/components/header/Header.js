@@ -9,8 +9,11 @@ import Burber from "../../assets/burger.svg";
 const Header = () => {
   const [click, setclick] = useState(false);
   const handleClick = () => setclick(!click);
+  const [elementId, setElementId] = useState('home')
 
-
+  const addActiveClass = (e) => {
+    setElementId(e.target.id)
+  }
 
   return (
     <header className="header">
@@ -21,18 +24,24 @@ const Header = () => {
         <nav className={click ? "nav__menu active" : "nav__menu"}>
           <ul className="nav__list">
             <li>
-              <a href="#" onClick={handleClick}>
-                Home
-              </a>
+              <a id="home" href="#" onClick={addActiveClass}
+                className={elementId === "home" ? "active" : ""}
+              >Home</a>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>Our mission</a>
+              <a id="mission" href="#" onClick={addActiveClass}
+                className={elementId === "mission" ? "active" : ""}
+              >Our mission</a>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>Places</a>
+              <a id="places" href="#" onClick={addActiveClass}
+                className={elementId === "places" ? "active" : ""}
+              >Places</a>
             </li>
             <li>
-              <a href="#" onClick={handleClick}>Team</a>
+              <a id="team" href="#" onClick={addActiveClass}
+                className={elementId === "team" ? "active" : ""}
+              >Team</a>
             </li>
           </ul>
           <div className="desktopHidden" >
