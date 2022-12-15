@@ -19,16 +19,14 @@
   .nav__menu a {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #FFFFFF;
+    color: #000000;
   }
-
-
 
   .hamburger {
     display: none;
   }
 
-  @media screen and (max-width:1240px) {
+  @media screen and (max-width: 1240px) {
     .hamburger {
       display: block;
     }
@@ -63,10 +61,10 @@
 }
 
 .header-bg {
-  background-color: rgba(0, 0, 0, .8);
-  transform: .5s;
-  -webkit-transform: .5s;
-  -moz-transform: .5s;
-  -ms-transform: .5s;
-  -o-transform: .5s;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: 0.5s;
+  -webkit-transform: 0.5s;
+  -moz-transform: 0.5s;
+  -ms-transform: 0.5s;
+  -o-transform: 0.5s;
 }
