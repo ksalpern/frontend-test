@@ -8,18 +8,17 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container">
-                <div className="contacts">
+                <div className="contacts footer__column">
                     <h4>Contacts</h4>
-                    <p>2019 Rootz Foundation.</p>
-                    <p>All rights reserved</p>
+                    <p>2019 Rootz Foundation. All rights reserved</p>
                 </div>
-                <div className="adress">
+                <div className="adress footer__column">
                     <h5>Headquarters</h5>
                     <p>1234 Taliban </p>
                     <p>Los Angeles, La 1234567</p>
                     <p>(123) 456-7890</p>
                 </div>
-                <div className="social">
+                <div className="social footer__column">
                     <h5>Social media</h5>
                     <ul>
                         <li>

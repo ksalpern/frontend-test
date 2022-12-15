@@ -1,6 +1,8 @@
 .footer {
   background-color: #f7f3f4;
   color: #333333;
+  padding: 0 18px;
+
   .container {
     display: flex;
     justify-content: space-between;
@@ -11,6 +13,7 @@
   h5 {
     margin-bottom: 37px;
   }
+
   p {
     font-weight: 400;
     font-size: 13px;
@@ -18,30 +21,66 @@
     letter-spacing: 0.3px;
   }
 
-  .social {
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+  .footer__column {
+    width: 100%;
+    max-width: 30%;
+  }
 
-      a {
-        height: 32px;
-        width: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: #333333;
-        border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -moz-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-      }
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 
-      img {
-        width: 60%;
-        max-height: 60%;
+  a {
+    height: 32px;
+    width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  img {
+    width: 60%;
+    max-height: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .footer__column.contacts {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 33px;
+      p {
+        opacity: 0.75;
       }
+    }
+
+    .footer__column {
+      width: 100%;
+      max-width: 50%;
+    }
+
+    h4 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      font-size: 18px;
+      margin-bottom: 20px;
     }
   }
 }
