@@ -56,7 +56,8 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 16px;
+  color: #1e1a20;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -132,4 +133,39 @@ h6 {
 ::-webkit-scrollbar-thumb {
   background: var(--skin-color);
   border-radius: 10px;
+}
+// /reset
+
+h2 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 56px;
+  font-size: 32px;
+}
+
+.btn {
+  background-color: #f2726c;
+  color: #fff;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.btn-more {
+  background-color: #f2726c;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
