@@ -168,14 +168,29 @@ a {
   line-height: 32px;
 }
 
+p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
 .btn {
   background-color: #f2726c;
   color: #fff;
+  padding: 15px 32px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 140%;
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+}
+
+.btn:hover{
+  background-color: #7675FD;
 }
 
 .btn-more {
