@@ -5,6 +5,14 @@ import headline from '../../../assets/Headline.svg'
 import location from '../../../assets/find.svg'
 
 import cardIcon from '../../../assets/card-icon.svg'
+import Parrot from '../../../assets/Parrot2.svg'
+import eye from '../../../assets/eye.svg'
+import par1 from '../../../assets/par1.svg'
+import par2 from '../../../assets/par2.svg'
+import par3 from '../../../assets/par3.svg'
+import par4 from '../../../assets/par4.svg'
+import par5 from '../../../assets/par5.svg'
+
 
 
 const Banner = () => {
@@ -12,7 +20,6 @@ const Banner = () => {
 
 const handleInput = (e) => {
     setSearch(e.target.value)
-    console.log(search)
 }
 
     return (
@@ -31,14 +38,22 @@ const handleInput = (e) => {
 
             <div className={styles.bannerRight}>
                 <div className={styles.banner__card}>
-                    <img src={cardIcon} />
+                    <img src={cardIcon} alt='' />
                     <div className={styles.card__content}>
                         <p>Members</p>
                         <span>29 128</span>
                     </div>
 
                 </div>
-                <div className={styles.bird}></div>
+                <div className={styles.bird}>
+                    <img className={styles.parrot} src={Parrot} alt="" />
+                    <img className={styles.eye} src={eye} alt="" />
+                    <img className={`${styles.par1} ${styles.par}`} src={par1} alt="" />
+                    <img className={`${styles.par2} ${styles.par}`} src={par2} alt="" />
+                    <img className={`${styles.par3} ${styles.par}`} src={par3} alt="" />
+                    <img className={`${styles.par4} ${styles.par}`} src={par4} alt="" />
+                    <img className={`${styles.par5} ${styles.par}`} src={par5} alt="" />
+                </div>
             </div>
         </div>
     )
