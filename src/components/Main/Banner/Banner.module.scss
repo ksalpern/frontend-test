@@ -1,7 +1,6 @@
 .banner {
   padding: 69px 18px 96px;
   display: flex;
-  
 }
 
 .bannerLeft {
@@ -175,6 +174,7 @@
       max-width: 758px;
       margin: 30px 0 40px;
       font-size: 15px;
+      line-height: 32px;
     }
   }
 
@@ -184,12 +184,56 @@
     justify-content: center;
   }
 
-  .search  button{
-      padding: 16px 15px;
-    }
+  .search button {
+    padding: 16px 15px;
+    letter-spacing: 1px;
+  }
 
-  .bannerRight{
+  .bannerRight {
     width: 100%;
     padding-top: 50px;
+
+    .banner__card {
+      width: 240px;
+      height: 285px;
+    }
+
+    .parrot {
+      left: 75%;
+    }
+
+    .eye {
+      left: 81%;
+    }
+
+    .par {
+      position: absolute;
+      right: 0;
+    }
+
+    .par1 {
+      top: -7%;
+      right: 2%;
+    }
+
+    .par2 {
+      top: 0px;
+      right: -45%;
+    }
+
+    .par3 {
+      top: 30%;
+      right: -26%;
+    }
+
+    .par4 {
+      top: 52%;
+      right: -16%;
+    }
+
+    .par5 {
+      top: 63%;
+      right: -2%;
+    }
   }
 }
