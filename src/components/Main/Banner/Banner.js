@@ -43,7 +43,6 @@ const handleInput = (e) => {
                         <p>Members</p>
                         <span>29 128</span>
                     </div>
-
                 </div>
                 <div className={styles.bird}>
                     <img className={styles.parrot} src={Parrot} alt="" />

@@ -1,6 +1,7 @@
 .banner {
-  padding: 69px 0 96px;
+  padding: 69px 18px 96px;
   display: flex;
+  
 }
 
 .bannerLeft {
@@ -11,6 +12,10 @@
     max-width: 448px;
     width: 100%;
     margin: 48px 0;
+  }
+  input {
+    width: 100%;
+    margin: 0 10px;
   }
 }
 
@@ -78,13 +83,14 @@
     width: 458px;
     height: 565px;
     position: relative;
+    padding-top: 20px;
     &:hover {
-      
     }
   }
   .parrot {
     position: absolute;
     left: 52%;
+    z-index: 1;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -93,8 +99,9 @@
   }
   .eye {
     position: absolute;
-    top: 4%;
+    top: 8%;
     left: 57%;
+    z-index: 2;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -103,7 +110,7 @@
     transition: all 0.5s ease-in-out;
     animation: clip 4s infinite;
     -webkit-animation: clip 4s infinite;
-}
+  }
   @keyframes clip {
     0% {
       transform: translateX(-50%);
@@ -127,5 +134,62 @@
       -o-transform: scale(1, -1) translateX(-50%);
     }
   }
-  
+  .par {
+    position: absolute;
+    right: 0;
+  }
+  .par1 {
+    top: -20px;
+    right: 20%;
+  }
+  .par2 {
+    top: 0px;
+    right: -50px;
+  }
+  .par3 {
+    top: 170px;
+    right: 0;
+  }
+  .par4 {
+    top: 303px;
+    right: 40px;
+  }
+  .par5 {
+    top: 356px;
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .bannerLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      max-width: 758px;
+      margin: 30px 0 40px;
+      font-size: 15px;
+    }
+  }
+
+  .bannerLeft__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search  button{
+      padding: 16px 15px;
+    }
+
+  .bannerRight{
+    width: 100%;
+    padding-top: 50px;
+  }
 }

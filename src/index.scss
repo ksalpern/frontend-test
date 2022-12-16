@@ -143,6 +143,7 @@ h2 {
   line-height: 56px;
   font-weight: 700;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 h3 {
@@ -172,7 +173,6 @@ a {
 }
 
 p {
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
@@ -181,7 +181,7 @@ p {
 .btn {
   background-color: #f2726c;
   color: #fff;
-  text-decoration: uppercase;
+  text-transform: uppercase;
   padding: 15px 32px;
   font-weight: 700;
   font-size: 13px;
@@ -193,8 +193,8 @@ p {
   -o-border-radius: 30px;
 }
 
-.btn:hover{
-  background-color: #7675FD;
+.btn:hover {
+  background-color: #7675fd;
 }
 
 .btn-more {
@@ -233,5 +233,23 @@ p {
   }
   .desktopHidden {
     display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 175%;
   }
 }
