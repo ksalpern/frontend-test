@@ -142,12 +142,15 @@ h2 {
   font-size: 40px;
   line-height: 56px;
   font-weight: 700;
+  margin-bottom: 40px;
 }
 
 h3 {
   font-weight: 600;
   line-height: 56px;
   font-size: 32px;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 h4 {
@@ -178,6 +181,7 @@ p {
 .btn {
   background-color: #f2726c;
   color: #fff;
+  text-decoration: uppercase;
   padding: 15px 32px;
   font-weight: 700;
   font-size: 13px;
