@@ -1,6 +1,6 @@
 .slider {
   background-color: #ffbd9e;
-  max-width: 1440px;
+  max-width: 1670px;
   width: 100%;
   margin: 0 auto;
   padding: 104px 0px;
@@ -96,6 +96,7 @@
   /* Ограничивающая оболочка */
   .slick-list {
     overflow: visible;
+    // padding: 0 20% 0 0% !important;
   }
   /* Лента слайдов */
   .slick-track {
