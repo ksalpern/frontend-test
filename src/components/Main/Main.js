@@ -16,8 +16,8 @@ const Main = () => {
       <Login />
       <div className="container">
         <GetStarted />
-        <Slider />
       </div>
+      <Slider />
     </main>
   );
 };
