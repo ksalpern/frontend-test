@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "./Banner/Banner";
+import GetStarted from "./GetStarted/GetStarted";
 import Login from "./Login/Login";
 import "./Main.scss";
 import Team from "./Team/Team";
@@ -7,11 +8,14 @@ import Team from "./Team/Team";
 const Main = () => {
   return (
     <main className="main">
-      <div className="container">
         <Banner />
+      <div className="container">
         <Team />
       </div>
       <Login />
+      <div className="container">
+        <GetStarted />
+      </div>
     </main>
   );
 };
