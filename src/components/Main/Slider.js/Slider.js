@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
-import './Slider.scss'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slide1 from '../../../assets/slider1.png'
@@ -9,6 +8,7 @@ import slide3 from '../../../assets/slider3.png'
 import slide4 from '../../../assets/slider4.png'
 import slide5 from '../../../assets/slider5.png'
 import bg from '../../../assets/bg.svg'
+import './Slider.scss'
 
 const dataForSlider = [
     {
@@ -29,6 +29,12 @@ const dataForSlider = [
         img: slide3
     },
     {
+        header: 'Plant trees',
+        descr: 'Taking on the issue of ensuring access to safe water requires worldwide effort.'
+        ,
+        img: slide5
+    },
+    {
         header: 'Avoid plastic',
         descr: 'Taking on the issue of ensuring access to safe water requires worldwide effort.'
         ,
@@ -40,6 +46,12 @@ const dataForSlider = [
 
         ,
         img: slide5
+    },
+    {
+        header: 'Save energy',
+        descr: 'Taking on the issue of ensuring access to safe water requires worldwide effort.'
+        ,
+        img: slide3
     }
 ]
 
@@ -90,13 +102,17 @@ export default function SimpleSlider() {
         <div className="slider">
             <Slider {...settings}>
                 {dataForSlider.map((item, i) => (
-                    <div key={i}>
-                        <h5>{item.header}</h5>
-                        <img src={item.img} alt="" />
-                        <img src={bg} alt="" />
-                        <p>{item.descr}</p>
+                    <div className="slider__items" key={i}>
+                        <div className="slide__text">
+                            <h5>{item.header}</h5>
+                            <p>{item.descr}</p>
+                        </div>
+                        <img className="image" src={item.img} alt="" />
+                        <img className="bg" src={bg} alt="" />
+
                     </div>
                 ))}
+
             </Slider>
 
             <div className="pages">
