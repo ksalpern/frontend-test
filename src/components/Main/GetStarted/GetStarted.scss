@@ -1,0 +1,64 @@
+.getStarted {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 192px 0;
+  h2 {
+    text-align: start;
+  }
+  p {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: start;
+    max-width: 423px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .btn {
+    margin-top: 56px;
+  }
+
+  .getStarted__options {
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: #f2726c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+
+    button:hover {
+      background-color: #7675fd;
+    }
+  }
+}
+
+.accordion {
+  &__title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__content {
+    display: none;
+  }
+
+  &__content.show {
+    display: block;
+  }
+}
