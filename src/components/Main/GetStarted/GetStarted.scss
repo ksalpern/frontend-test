@@ -16,6 +16,8 @@
   h3 {
     font-size: 24px;
     line-height: 34px;
+    text-align: start;
+    margin-bottom: 0;
   }
 
   .descr {
@@ -23,13 +25,20 @@
     font-size: 16px;
     line-height: 24px;
   }
+
   .btn {
     margin-top: 56px;
   }
 
+  .getStarted__left {
+    width: 50%;
+  }
+
   .getStarted__options {
+    width: 50%;
+
     button {
-      width: 40px;
+      min-width: 40px;
       height: 40px;
       background-color: #f2726c;
       display: flex;
@@ -49,6 +58,11 @@
 }
 
 .accordion {
+  li {
+    border-bottom: 1px solid rgba(30, 26, 32, 0.2);
+    padding: 35px 0;
+  }
+
   &__title {
     display: flex;
     align-items: flex-start;
@@ -60,5 +74,31 @@
 
   &__content.show {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .getStarted {
+    flex-wrap: wrap;
+
+    p {
+      max-width: 100%;
+    }
+
+    .getStarted__left {
+      width: 100%;
+    }
+
+    .getStarted__options {
+      margin-top: 40px;
+      width: 100%;
+    }
+  }
+
+  .accordion {
+    h3 {
+      font-size: 18px;
+      line-height: 26px;
+    }
   }
 }
