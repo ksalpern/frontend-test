@@ -95,7 +95,25 @@ export default function SimpleSlider() {
         prevArrow: <SamplePrevArrow />,
         afterChange: () =>
             setUpdateCount(updateCount + 1),
-        beforeChange: (current, next) => setSlideIndex(next)
+        beforeChange: (current, next) => setSlideIndex(next),
+        responsive: [
+            {
+                breakpoint: 1378,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 900,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
     };
 
     return (
@@ -109,7 +127,7 @@ export default function SimpleSlider() {
                         </div>
                         <img className="image" src={item.img} alt="" />
                         <img className="bg" src={bg} alt="" />
-
+                        <img className="bg-shadow" src={bg} alt="" />
                     </div>
                 ))}
 

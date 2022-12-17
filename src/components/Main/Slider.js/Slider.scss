@@ -17,7 +17,7 @@
   }
 
   .prev {
-    left: 40%;
+    left: 44%;
     bottom: 0%;
     width: 50px;
     height: 50px;
@@ -30,7 +30,7 @@
   }
 
   .next {
-    right: 40%;
+    right: 44%;
     bottom: 0%;
     width: 50px;
     height: 50px;
@@ -68,6 +68,10 @@
     display: none;
   }
 
+  .bg-shadow {
+    display: none;
+  }
+
   p {
     display: none;
   }
@@ -80,41 +84,41 @@
     flex-direction: column;
 
     img {
-      width: 100%;
+      width: 85%;
     }
   }
 
-  /* Слайдер */
   .slick-slider {
+    scale: 1.2;
   }
-  /* Слайдер запущен */
-  .slick-slider.slick-initialized {
-  }
-  /* Слайдер с точками */
-  .slick-slider.slick-dotted {
-  }
-  /* Ограничивающая оболочка */
+
   .slick-list {
     overflow: visible;
-    // padding: 0 20% 0 0% !important;
   }
-  /* Лента слайдов */
-  .slick-track {
-  }
-  /* Слайд */
+
   .slick-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
   }
-  /* Слайд активный (показывается) */
-  .slick-slide.slick-active {
-  }
-  /* Слайд основной */
+
   .slick-slide.slick-current {
     .bg {
       display: block;
+      width: 100%;
+    }
+
+    .bg-shadow {
+      display: block;
+      width: 110%;
+      height: 110%;
+      top: 0%;
+      left: 0;
+      opacity: 0.2;
+      position: absolute;
+      z-index: 1;
+      scale: 1.1;
     }
 
     p {
@@ -129,43 +133,15 @@
       position: absolute;
       max-width: 45%;
       width: 100%;
-      top: -10%;
+      top: -15%;
       left: 0%;
+      z-index: 3;
     }
 
     h5 {
       color: #1e1a20;
       opacity: 0.9;
     }
-  }
-  /* Слайд по центру */
-  .slick-slide.slick-center {
-  }
-  /* Клонированный слайд */
-  .slick-slide.slick-cloned {
-  }
-  /* Стрелка */
-  .slick-arrow {
-  }
-  /* Стрелка влево */
-  .slick-arrow.slick-prev {
-  }
-  /* Стрелка вправо */
-  .slick-arrow.slick-next {
-  }
-  /* Стрелка не активная */
-  .slick-arrow.slick-disabled {
-  }
-  /* Точки (булиты) */
-  .slick-dots {
-  }
-  .slick-dots li {
-  }
-  /* Активная точка */
-  .slick-dots li.slick-active {
-  }
-  /* Элемент точки */
-  .slick-dots li button {
   }
 }
 
@@ -184,5 +160,52 @@
 
   .totalSlides {
     opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    .prev {
+      left: 30%;
+    }
+
+    .next {
+      right: 30%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .slider {
+    .slick-slider {
+      scale: 1;
+    }
+    .slick-slide {
+      height: 420px;
+    }
+    .prev {
+      bottom: calc(-50px + (-45 + 50) * ((100vw - 500px) / (900 - 500)));
+    }
+
+    .next {
+      bottom: calc(-50px + (-45 + 50) * ((100vw - 500px) / (900 - 500)));
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slider {
+    .slick-slider {
+      scale: 0.9;
+    }
+    .prev {
+      left: 20%;
+      bottom: calc(-75px + (-80 + 75) * ((100vw - 320px) / (500 - 320)));
+    }
+
+    .next {
+      right: 20%;
+      bottom: calc(-75px + (-80 + 75) * ((100vw - 320px) / (500 - 320)));
+    }
   }
 }
