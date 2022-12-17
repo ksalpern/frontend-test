@@ -70,6 +70,8 @@
 
 @media screen and (max-width: 876px) {
   .team {
+  margin-bottom: 90px;
+    
     .team__item {
       width: 50%;
       height: calc(320px + (400 - 320) * ((100vw - 320px) / (876 - 320)));

@@ -1,5 +1,7 @@
 .login {
   background-color: #ffbd9e;
+  position: relative;
+  z-index: 1;
   max-width: 1120px;
   margin: 0 auto;
   display: flex;
@@ -79,8 +81,8 @@
     padding: 42px 18px 56px 18px;
 
     p {
-        max-width: 758px;
-      }
+      max-width: 758px;
+    }
 
     form {
       margin-top: 55px;
