@@ -1,6 +1,15 @@
 .banner {
   padding: 69px 18px 96px;
   display: flex;
+  background-color: #f7f3f4;
+  margin-bottom: 192px;
+  .container {
+    max-width: 1120px;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 18px;
+  }
 }
 
 .bannerLeft {
@@ -161,7 +170,10 @@
 
 @media screen and (max-width: 768px) {
   .banner {
-    flex-direction: column;
+    margin-bottom: 100px;
+    .container {
+      flex-direction: column;
+    }
   }
 
   .bannerLeft {
