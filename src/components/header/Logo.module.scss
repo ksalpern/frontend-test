@@ -6,27 +6,35 @@
     height: 40px;
     position: relative;
     margin-right: 12px;
+    transition: transform .9s ease;
   }
-  .logoImg__item{
+  .logoImg:hover {
+    transform: rotate(-40deg);
+  }
+  .logoImg__item {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
-  .item1{
+
+  .item1 {
     left: 0;
   }
-  .item2{
+
+  .item2 {
     left: 8px;
     top: inherit;
     bottom: -8px;
   }
-  .item3{
+
+  .item3 {
     left: 8px;
     top: inherit;
     bottom: -5px;
   }
-  .logoName{
+
+  .logoName {
     width: 60px;
     height: 16px;
   }

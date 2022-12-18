@@ -4,8 +4,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "./Logo";
 import ApplyButton from "./ApplyButton";
 
-import Burber from "../../assets/burger.svg";
-
 const Header = () => {
   const [click, setclick] = useState(false);
   const handleClick = () => setclick(!click);

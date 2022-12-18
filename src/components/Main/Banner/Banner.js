@@ -3,7 +3,6 @@ import styles from "./Banner.module.scss";
 
 import headline from "../../../assets/Headline.svg";
 import location from "../../../assets/find.svg";
-
 import cardIcon from "../../../assets/card-icon.svg";
 import Parrot from "../../../assets/Parrot2.svg";
 import eye from "../../../assets/eye.svg";

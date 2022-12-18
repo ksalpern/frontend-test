@@ -3,6 +3,7 @@
   display: flex;
   background-color: #f7f3f4;
   margin-bottom: 192px;
+
   .container {
     max-width: 1120px;
     width: 100%;
@@ -21,6 +22,7 @@
     width: 100%;
     margin: 48px 0;
   }
+
   input {
     width: 100%;
     margin: 0 10px;
@@ -52,6 +54,7 @@
   position: relative;
   display: flex;
   align-items: flex-end;
+
   .banner__card {
     padding: 32px;
     position: absolute;
@@ -69,11 +72,13 @@
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+
     img {
       width: 48px;
       height: 56px;
     }
   }
+
   p {
     font-weight: 700;
     font-size: 20px;
@@ -81,20 +86,24 @@
     text-transform: capitalize;
     color: #ffffff;
   }
+
   span {
     font-weight: 700;
     font-size: 56px;
     line-height: 80px;
     color: #ffffff;
   }
+
   .bird {
     width: 458px;
     height: 565px;
     position: relative;
     padding-top: 20px;
+
     &:hover {
     }
   }
+
   .parrot {
     position: absolute;
     left: 52%;
@@ -105,6 +114,7 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
   }
+
   .eye {
     position: absolute;
     top: 8%;
@@ -119,6 +129,7 @@
     animation: clip 4s infinite;
     -webkit-animation: clip 4s infinite;
   }
+
   @keyframes clip {
     0% {
       transform: translateX(-50%);
@@ -127,6 +138,7 @@
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
     }
+
     95% {
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
@@ -134,6 +146,7 @@
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
     }
+
     100% {
       transform: scale(1, -1) translateX(-50%);
       -webkit-transform: scale(1, -1) translateX(-50%);
@@ -142,26 +155,32 @@
       -o-transform: scale(1, -1) translateX(-50%);
     }
   }
+
   .par {
     position: absolute;
     right: 0;
   }
+
   .par1 {
     top: -20px;
     right: 20%;
   }
+
   .par2 {
     top: 0px;
     right: -50px;
   }
+
   .par3 {
     top: 170px;
     right: 0;
   }
+
   .par4 {
     top: 303px;
     right: 40px;
   }
+
   .par5 {
     top: 356px;
     right: 90px;
@@ -206,8 +225,17 @@
     padding-top: 50px;
 
     .banner__card {
-      width: 240px;
-      height: 285px;
+      width: 215px;
+      height: 256px;
+      bottom: 20%;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    span {
+      font-size: 40px;
     }
 
     .parrot {

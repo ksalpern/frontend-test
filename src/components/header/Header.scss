@@ -1,5 +1,4 @@
 .header {
-  // position: fixed;
   padding: 0 18px;
   width: 100%;
   display: flex;
@@ -7,24 +6,20 @@
   background-color: #f7f3f4;
   align-items: center;
   position: relative;
-
   z-index: 10;
+
   .header__container {
     padding: 20px 0;
     border-bottom: 4px solid #222433;
   }
+
   .nav__menu {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // flex: 1 1 auto;
     width: 100%;
     max-width: 1000px;
     margin: 0 20px;
-  }
-
-  .nav__menu li {
-    // padding: 1rem;
   }
 
   .nav__menu a {
@@ -65,6 +60,7 @@
   @media screen and (max-width: 1024px) {
     .hamburger {
       display: block;
+      cursor: pointer;
     }
 
     .nav__menu {
@@ -83,10 +79,6 @@
       background: #f7f3f4;
       margin: 0;
 
-      li {
-        // padding: 1rem 0;
-      }
-
       li:last-child {
         margin-bottom: 165px;
       }
@@ -99,6 +91,7 @@
         left: 0;
       }
     }
+
     .nav__list {
       flex-direction: column;
       gap: 56px;

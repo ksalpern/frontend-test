@@ -2,7 +2,6 @@ import React from "react";
 import Banner from "./Banner/Banner";
 import GetStarted from "./GetStarted/GetStarted";
 import Login from "./Login/Login";
-import "./Main.scss";
 import Slider from "./Slider.js/Slider";
 import Team from "./Team/Team";
 
